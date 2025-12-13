@@ -47,8 +47,8 @@ An intelligent step-by-step conversation handler that guides the user.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/Questionist/TradeTracker-Bot.git
-    cd TradeTracker-Bot
+    git clone https://github.com/Questionist/TradeTracker.git
+    cd TradeTracker
     ```
 
 2.  **Install Dependencies:**
